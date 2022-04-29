@@ -9,34 +9,34 @@
         <!-- Load all of the assets we are going to use -->
       <a-assets>
           <!-- Hilly sky for the background -->
-          <img id="hilly-sky" src="./assets/hilly-skybox.jpeg" />
+          <img id="quarry" src="./assets/quarry.jpeg" />
           <!-- Cute turtle -->
           <img id="sunglasses-turtle" src="./assets/sunglasses-turtle.png" />
           <!-- Turtle 3D model -->
-        <a-asset-item id="turtle" src="./assets/turtle.glb" />
+        <a-asset-item id="dino" src="./assets/pterodactyl.glb" />
       </a-assets>
-      <a-image src="#sunglasses-turtle" position="0 3 -4" width="2.5" height="1.75" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"></a-image>
+      <!-- <a-image src="#sunglasses-turtle" position="0 3 -2" width="2.5" height="1.75" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"></a-image> -->
       <!-- Turtle -->
-      <a-entity position="-1 2 -4" scale="0.03 0.03 0.03" rotation="0 -180 0" gltf-model="#turtle" animation-mixer></a-entity>
+      <a-entity position="0 0 -2" scale="2 2 2" rotation="0 0 0" gltf-model="#dino" animation-mixer></a-entity>
       <!-- Blue box -->
-      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#0000EE"></a-box>
+      <!-- <a-box position="-1 0.5 -3" rotation="0 45 0" color="#0000EE"></a-box> -->
       <!-- Pink sphere -->
-      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+      <!-- <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere> -->
       <!-- Yellow cylinder -->
-      <a-cylinder
+      <!-- <a-cylinder
         position="1 0.75 -3"
         radius="0.5"
         height="1.5"
         color="#FFC65D"
-      ></a-cylinder>
+      ></a-cylinder> -->
       <!-- Ground plane -->
-      <a-plane
+      <!-- <a-plane
         position="0 0 -4"
         rotation="-90 0 0"
         width="4"
         height="4"
         color="#7BC8A4"
-      ></a-plane>
+      ></a-plane> -->
       <!-- A red light on the right pointing to the left -->
       <a-entity light="type: directional; color: #FAA7C1; intensity: 1.25" position="1 1 0""></a-entity>
       <!-- A blue light on the left pointing to the right -->
@@ -44,7 +44,7 @@
       <!-- An ambient light that is grayish-white -->
       <a-entity light="type: ambient; color: #CCC"></a-entity>
     <!-- Sky background -->
-      <a-sky src="#hilly-sky"></a-sky>
+      <a-sky src="#quarry"></a-sky>
     </a-scene>
   </body>
 </html>
